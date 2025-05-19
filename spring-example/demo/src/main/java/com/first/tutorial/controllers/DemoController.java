@@ -12,4 +12,9 @@ public class DemoController {
     public String index() {
         return "My first returned string";
     }
+
+    @RequestMapping(value="/home.html", method = RequestMethod.GET)
+    public String home(){
+        return "home.html";
+    }
 }
